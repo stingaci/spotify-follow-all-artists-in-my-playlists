@@ -1,4 +1,4 @@
-# spotify-now-playing-history
+# spotify-follow-all-artists-in-my-playlists
 
 This is a simple script that will go through your playlists and follows all the artists within them (in case you either forgot to, or used a playlist sync tool when you first started using Spotify). 
 
