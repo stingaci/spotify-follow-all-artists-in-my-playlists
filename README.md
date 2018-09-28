@@ -4,7 +4,7 @@ This is a simple script that will go through your playlists and follows all the 
 
 Usage: 
 
-python syncer.py --user_id USER_ID --exclude_playlist_names 'COMMA_SEPARATED_PLAYLIST_NAMES' --exclude_playlist_ids 'COMMA_SEPARATED_PLAYLIST_IDS'
+`python syncer.py --user_id USER_ID --exclude_playlist_names 'COMMA_SEPARATED_PLAYLIST_NAMES' --exclude_playlist_ids 'COMMA_SEPARATED_PLAYLIST_IDS'`
 
 `exclude_playlist_names` and `exclude_playlist_ids` are optional. **If your playlist name has a comma in it, the exclusion rules will fail!!!** One day, I'll clean this up
 
