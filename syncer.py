@@ -54,7 +54,6 @@ class SpotifyConn:
 
 
     def follow_artists(self, artists):
-        print artists
         self.sp.user_follow_artists(artists)
 
 parser = argparse.ArgumentParser()
@@ -72,10 +71,6 @@ if args.exclude_playlist_names == None:
     args.exclude_playlist_names = []
 else: 
     args.exclude_playlist_names = args.exclude_playlist_names.split(',')
-
-print args.user_id
-print args.exclude_playlist_ids
-print args.exclude_playlist_names
 
 sp = SpotifyConn(args.user_id)
 playlists = sp.get_playlist_ids(args.exclude_playlist_ids, args.exclude_playlist_names)
@@ -109,4 +104,4 @@ for batch in batches:
     if batch:
         sp.follow_artists(batch)
 
-
+print "Succesfully followed " + len(artists) + " artists!"
